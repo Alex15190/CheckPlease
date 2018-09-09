@@ -11,10 +11,11 @@
 		85F5285121451FE30045262B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5285021451FE30045262B /* ViewController.m */; };
 		85F5285421451FE30045262B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F5285221451FE30045262B /* Main.storyboard */; };
 		85F5285621451FFA0045262B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F5285521451FFA0045262B /* Assets.xcassets */; };
-		85F5285921451FFA0045262B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F5285721451FFA0045262B /* LaunchScreen.storyboard */; };
 		85F5285C21451FFA0045262B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5285B21451FFA0045262B /* main.m */; };
 		85F5286621451FFA0045262B /* CheckPleaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5286521451FFA0045262B /* CheckPleaseTests.m */; };
 		85F5287121451FFA0045262B /* CheckPleaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5287021451FFA0045262B /* CheckPleaseUITests.m */; };
+		85F528802145205B0045262B /* CGPointUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 85F5287E2145205B0045262B /* CGPointUtils.c */; };
+		85F52883214520EC0045262B /* BIDCheckMarkRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F52882214520EC0045262B /* BIDCheckMarkRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		85F5285021451FE30045262B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		85F5285321451FE30045262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85F5285521451FFA0045262B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		85F5285821451FFA0045262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85F5285A21451FFA0045262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85F5285B21451FFA0045262B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85F5286121451FFA0045262B /* CheckPleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckPleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,10 @@
 		85F5286C21451FFA0045262B /* CheckPleaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckPleaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F5287021451FFA0045262B /* CheckPleaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPleaseUITests.m; sourceTree = "<group>"; };
 		85F5287221451FFA0045262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F5287E2145205B0045262B /* CGPointUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGPointUtils.c; sourceTree = "<group>"; };
+		85F5287F2145205B0045262B /* CGPointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointUtils.h; sourceTree = "<group>"; };
+		85F52881214520EC0045262B /* BIDCheckMarkRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDCheckMarkRecognizer.h; sourceTree = "<group>"; };
+		85F52882214520EC0045262B /* BIDCheckMarkRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDCheckMarkRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,12 @@
 				85F5284D21451FE30045262B /* AppDelegate.m */,
 				85F5284F21451FE30045262B /* ViewController.h */,
 				85F5285021451FE30045262B /* ViewController.m */,
+				85F52881214520EC0045262B /* BIDCheckMarkRecognizer.h */,
+				85F52882214520EC0045262B /* BIDCheckMarkRecognizer.m */,
+				85F5287E2145205B0045262B /* CGPointUtils.c */,
+				85F5287F2145205B0045262B /* CGPointUtils.h */,
 				85F5285221451FE30045262B /* Main.storyboard */,
 				85F5285521451FFA0045262B /* Assets.xcassets */,
-				85F5285721451FFA0045262B /* LaunchScreen.storyboard */,
 				85F5285A21451FFA0045262B /* Info.plist */,
 				85F5285B21451FFA0045262B /* main.m */,
 			);
@@ -235,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F5285921451FFA0045262B /* LaunchScreen.storyboard in Resources */,
 				85F5285621451FFA0045262B /* Assets.xcassets in Resources */,
 				85F5285421451FE30045262B /* Main.storyboard in Resources */,
 			);
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F528802145205B0045262B /* CGPointUtils.c in Sources */,
+				85F52883214520EC0045262B /* BIDCheckMarkRecognizer.m in Sources */,
 				85F5285121451FE30045262B /* ViewController.m in Sources */,
 				85F5285C21451FFA0045262B /* main.m in Sources */,
 				85F5284E21451FE30045262B /* AppDelegate.m in Sources */,
@@ -306,14 +314,6 @@
 				85F5285321451FE30045262B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		85F5285721451FFA0045262B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85F5285821451FFA0045262B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
